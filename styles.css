@@ -8,13 +8,12 @@
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: auto;
     grid-template-areas:
         "header header header"
         "profile bio profilepic"
-        "aboutme playlist jokes"
-        "picture playlist game"
-        ". . .";
+        "aboutme playlist joke"
+        "game game picture"
 }
 
 div {
@@ -68,7 +67,6 @@ p {
     border-style: solid;
     border-width: 8px 0 8px 8px;
     border-color: #333;
-    width: 100%;
 }
 
 .iconpic {
@@ -97,11 +95,12 @@ p {
 .profilepic {
     margin-top: 130px;
     grid-area: profilepic;
+    margin-left: -10px;
 }
 
 #profilepic {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     border-style: solid;
     border-width: 8px;
@@ -113,15 +112,12 @@ p {
 .aboutme {
     grid-area: aboutme;
     text-align: left;
-    background:lightgray;
+    background:whitesmoke;
 }
 
 .playlist{
     grid-area: playlist;
     background:#f5f5f5;
-    border-width: 8px;
-    border-style: solid;
-    border-color: lightgray;
 }
 
 .spotify {
@@ -129,33 +125,45 @@ p {
     height: 90%;
 }
 
-.jokes {
-    grid-area: jokes;
+.joke {
+    grid-area: joke;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #333;
+    margin:-8px 0 0 -8px;
+}
+
+.hide {
+    display: none;
+    text-align: right;
+}
+  
+#joke:hover + .hide {
+    display: block;
 }
 
 /* THIRD ROW */
 
 .picture {
     grid-area: picture;
+    margin-left: -10px;
 }
 
 #picture {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     border-style: solid;
     border-width: 8px;
     border-color: rgb(236, 244, 245);
+    filter: grayscale(100%);
 }
 
 .game {
     grid-area: game;
-    border-style: solid;
+    background: #f5f5f5;
     border-width: 8px;
-    border-color: rgb(236, 244, 245);
+    border-style: solid;
+    border-color: #333;
+    margin: -8px 0 0 0;
 }
-
-/* FOURTH ROW */
-
-
-
