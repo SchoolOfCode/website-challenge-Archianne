@@ -7,6 +7,7 @@
     margin: 0 auto;
     background: white;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     grid-template-areas:
@@ -33,6 +34,7 @@ div {
     background: #333;
     color: #fff;
     top: 0;
+    z-index:300; 
 }
 
 .title {
@@ -63,7 +65,8 @@ p {
 .profile {
     grid-area: profile;
     margin-top: 130px;
-    background:#f5f5f5;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
     border-style: solid;
     border-width: 8px 0 8px 8px;
     border-color: #333;
@@ -72,6 +75,14 @@ p {
 .iconpic {
     width: 50%;
     max-width: 100px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 850ms;
+}
+
+.iconpic:hover {
+    transform: rotate(360deg);
+    filter: grayscale(0%);
 }
 
 #iconpic {
@@ -86,7 +97,7 @@ p {
 .bio {
     grid-area: bio;
     margin-top: 130px;
-    background-color:#d3d3d3;
+    background-color:whitesmoke;
     border-style: solid;
     border-width: 8px 8px 8px 0;
     border-color: #333;
@@ -115,16 +126,55 @@ p {
     background:whitesmoke;
 }
 
-.playlist{
+/* spotify hide */
+.playlist {
     grid-area: playlist;
-    background:#f5f5f5;
+    background-color: whitesmoke;
+}
+
+.play-container {
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    padding: 0 0px;
+    margin-left: -12px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+}
+
+.play-text {
+    background-color: #333;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+#text {
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.show {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0.05;
+    transition: .5s ease;
+    background-color: whitesmoke;
+}
+
+  .play-container:hover .show {
+    opacity: 1;
 }
 
 .spotify {
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
+/* joke hide */
 .joke {
     grid-area: joke;
     border-width: 8px;
@@ -166,4 +216,31 @@ p {
     border-style: solid;
     border-color: #333;
     margin: -8px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scratch {
+    max-width: 400px;
+    width: 100%;
+}
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+h6 {
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: darkgray;
+    background-color: whitesmoke;
+}
+
+.my-links {
+    margin-top: -40px;
 }
