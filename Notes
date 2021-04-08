@@ -19,3 +19,6 @@ I learnt how to hide texts (and they appear when you hover) so I could hide the 
 
 Icon picture rotation and changing colour:
 I had seen this in a website before and I wanted to learn how to do it, so that was fun!
+
+Change number of column:
+Problem: I was happy with my website but it was bothering me the content looked weird in a smaller screen. So I studied a bit of mediaquery and finally it looks the way I wanted.
