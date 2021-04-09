@@ -48,7 +48,8 @@ p, li {
 }
 
 #picture {
-    display: none;
+    height:250px;
+    object-position: top;
 }
 
 .aboutme {
@@ -63,13 +64,27 @@ p, li {
    justify-content: center;
 }
 
+.play-container {
+    background: transparent;
+}
+
+.play-text {
+    background: transparent;
+}
+
+.show {
+    opacity:1;
+}
+
 .joke {
     border: 3px solid #333;
     margin: 0;
 }
 
 .game {
-    margin-top: -30px;
-    border:0;
-    background: white;
+    display:none;
+}
+
+.gif {
+    display:none;
 }
