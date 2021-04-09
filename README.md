@@ -34,11 +34,11 @@ That was the very first thing I've done in my page. I used CSS Grid to basically
 
 Well that was difficult to figure out, because at first I couldn't get the header to be the size of the page, but it was fixed by using `width:100%` and also setting a max-width.
 
-I also had a problem with my icon going over the header instead of scrolling behind it. I learnt how to use z-index (which defines the order of the elements in the z axis) and I had the problem fixed.
+I also had a problem with my icon going over the header instead of scrolling behind it. I learnt how to use `z-index` (which defines the order of the elements in the z axis) and I had the problem fixed.
 
 #### Embed links:
 
-I used embed links to put Jack's favourite playlist on the page but I really wanted to put the game on Scratch he had made for the application process of School of Code, I did some research and ta-da! It works!
+I used embed links to put Jack's favourite playlist on the page but I really wanted to put the game on Scratch he had made for the application process of SoCode, I did some research and ta-da! It works!
 
 #### Hide text:
 
@@ -46,10 +46,10 @@ I learnt how to hide texts (they appear when you hover) so I could hide the answ
 
 #### Icon picture:
 
-I had seen this in a website before and I wanted to learn how to do it, so that was fun! The icon picture is round by using `border-radius=50%;` and it's b&w like the other pictures. But when you hover, the icon rotates 360 and it goes back to its original colour.
+I had seen this in a website before and I wanted to learn how to do it, so that was fun! The icon picture is round by using `border-radius=50%;` and it's Black and White like the other pictures. However, when you hover, the icon rotates 360&deg; and it goes back to its original colour.
 
 #### Media Query:
 
-That has got to be my favourite. I was happy with my website but it was bothering me the content looked weird in a smaller screen. So I studied a bit of mediaquery and finally it looks the way I wanted. So when you open the website in a mobile or if you resize the screen on the browser the whole page changes from 3 columns to only 1!
+That has got to be my favourite. I was happy with my website but it was bothering me that the content looked weird in a smaller screen. So I studied a bit of mediaquery and finally it looks like the way I wanted. So when you open the website in a mobile or if you resize the screen on the browser the whole page changes from 3 columns to only 1!
 
-For the media query I changed from grid to flexbox and I also hid all the picture (just because I can!)
+For the media query I changed everything from grid to flexbox and I also hid some pictures and the game (just because I can!)
