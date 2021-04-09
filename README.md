@@ -17,7 +17,7 @@ For your first project on the bootcamp, we want you to make a website all about 
   
 | Webpage | Small screen |
 |--|--|
-| ![Page Full screen](https://github.com/SchoolOfCode/website-challenge-Archianne/blob/main/gallery/Website.PNG?raw=true =500x) |![Page Mobile](https://github.com/SchoolOfCode/website-challenge-Archianne/blob/main/gallery/WebsiteQuery.PNG?raw=true =250x)  |
+| ![Page Full screen](https://github.com/SchoolOfCode/website-challenge-Archianne/blob/main/gallery/Website.PNG?raw=true) |![Page Mobile](https://github.com/SchoolOfCode/website-challenge-Archianne/blob/main/gallery/WebsiteQuery.PNG?raw=true)  |
 
 # About my project
 
