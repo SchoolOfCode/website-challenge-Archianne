@@ -1,0 +1,90 @@
+body {
+    background-color: whitesmoke;
+    }
+        
+.blocks {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 90%;
+    background-color: white;
+}
+
+/* HEADER & TITLES & TEXT*/
+
+.header {
+    width: 90%;
+    max-width: 500px;
+}
+
+p, li {
+    font-size: 13px;
+}
+
+/* CHANGES */
+
+.profile {
+    background: white;
+    margin-top: 130px;
+    border: 3px solid #333;
+}
+
+#iconpic {
+    margin-left: 35%;
+}
+
+.bio {
+    background: white;
+    margin-top: 10px;
+    border: 3px solid #333;
+}
+
+.profilepic {
+    margin:0;
+}
+
+#profilepic {
+    display:none;
+}
+
+#picture {
+    height:250px;
+    object-position: top;
+}
+
+.aboutme {
+    background: white;
+    border: 3px solid #333;
+    margin-top: -30px;
+}
+.playlist {
+   background: white;
+   width: 90%;
+   display: flex;
+   justify-content: center;
+}
+
+.play-container {
+    background: transparent;
+}
+
+.play-text {
+    background: transparent;
+}
+
+.show {
+    opacity:1;
+}
+
+.joke {
+    border: 3px solid #333;
+    margin: 0;
+}
+
+.game {
+    display:none;
+}
+
+.gif {
+    display:none;
+}

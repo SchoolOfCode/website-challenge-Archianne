@@ -1,0 +1,292 @@
+.blocks {
+    font-size: 40px;
+    max-width: 1100px;
+    min-height: 20em;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header     header      header"
+        "profile    bio         profilepic"
+        "aboutme    playlist    joke"
+        "game       gif         picture"
+}
+
+div {
+    padding: 20px;
+}
+
+/* HEADER & TITLES & TEXT*/
+
+.header {
+    grid-area: header;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 90%;
+    max-width: 1100px;
+    padding: 10px 0;
+    position: fixed;        
+    background: #333;
+    color: #fff;
+    top: 0;
+    z-index:300; 
+}
+
+.title {
+    font-family: "Bebas Neue";
+    letter-spacing: 4px;
+    line-height: 0;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #333;
+}
+
+p, li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+p {
+    line-height: auto;
+    margin-top: -10px;
+}
+
+/* FIRST ROW */
+
+.profile {
+    grid-area: profile;
+    margin-top: 130px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    border: solid #333;
+    border-width: 6px 0 6px 6px;
+    
+}
+
+.iconpic {
+    width: 50%;
+    max-width: 100px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 850ms;
+}
+
+.iconpic:hover {
+    transform: rotate(360deg);
+    filter: grayscale(0%);
+    transform: 180s;
+}
+
+#iconpic {
+    border-radius: 50%;
+    border-style: solid;
+    border-width:8px;
+    border-color:white;
+    margin-top: -70px;
+    margin-left: 25%;
+}
+
+.bio {
+    grid-area: bio;
+    margin-top: 130px;
+    background-color:whitesmoke;
+    border: solid #333;
+    border-width: 6px 6px 6px 0;
+}
+
+.profilepic {
+    grid-area: profilepic;
+    margin-top: 130px;
+    margin-left: -10px;
+}
+
+#profilepic {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: solid 8px whitesmoke;
+    filter: grayscale(100%) contrast(100%);
+}
+
+/* SECOND ROW */
+
+.aboutme {
+    grid-area: aboutme;
+    text-align: left;
+    background:whitesmoke;
+}
+
+/* spotify hide */
+
+.playlist {
+    grid-area: playlist;
+    background-color: whitesmoke;
+}
+
+.play-container {
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    padding: 0 0px;
+    margin-left: -12px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+}
+
+.play-text {
+    background-color: #333;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+#text {
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.show {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0.05;
+    transition: .5s ease;
+    background-color: whitesmoke;
+}
+
+  .play-container:hover .show {
+    opacity: 1;
+}
+
+.spotify {
+    width: 100%;
+    height: 100%;
+}
+
+/* joke hide */
+.joke {
+    grid-area: joke;
+    border-width: 8px;
+    border: solid #333 6px;
+    margin:-6px 0 0 -6px;
+}
+
+.hide {
+    display: none;
+    text-align: right;
+}
+  
+#joke:hover + .hide {
+    display: block;
+}
+
+/* THIRD ROW */
+
+.picture {
+    grid-area: picture;
+    margin-left: -10px;
+}
+
+#picture {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: solid 8px whitesmoke;
+    filter: grayscale(100%) contrast(150%);
+}
+
+/* game */
+
+.game {
+    grid-area: game;
+    background: #f5f5f5;
+    border: solid #333;
+    border-width: 6px 0 6px 6px;
+    margin: -6px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container {
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    padding: 0 0px;
+}
+
+.game-text {
+    background-color: #333;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+#text-2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.game-show {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0.05;
+    transition: .5s ease;
+    background-color: whitesmoke;
+}
+
+.game-container:hover .game-show {
+    opacity: 1;
+}
+
+.scratch {
+    max-width: 400px;
+    width: 100%;
+    height:300px;
+}
+
+/* gif */
+.gif {
+    grid-area: gif;
+    border: solid #333;
+    border-width: 6px 6px 6px 0px;
+    margin-top: -6px;
+}    
+
+#gif {
+    width:90%;
+    max-width: 250px;
+    padding-top: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+h6 {
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: darkgray;
+    background-color: whitesmoke;
+}
+
+.my-links {
+    margin-top: -40px;
+}
